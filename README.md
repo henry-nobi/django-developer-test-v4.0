@@ -5,4 +5,5 @@ Hello! I'm Henry Tran, a dedicated software developer from Nobisoft with 4 years
 
 Let's connect and create something amazing together!
 
+If you need the `.env` file to run the application, you can email me. You can also provide feedback about my test through my email. I greatly appreciate it.
 You can reach me at: [hung.tm@nobisoft.com.vn](mailto:hung.tm@nobisoft.com.vn)
