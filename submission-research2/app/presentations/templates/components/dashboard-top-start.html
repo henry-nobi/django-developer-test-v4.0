@@ -1,0 +1,407 @@
+{% load static %}
+{% load i18n %}
+<!-- Topbar Start -->
+<div class="topbar-custom">
+    <div class="container-fluid">
+        <div class="d-flex justify-content-between">
+            <ul class="list-unstyled topnav-menu mb-0 d-flex align-items-center">
+                <li>
+                    <button class="button-toggle-menu nav-link">
+                        <i data-feather="menu" class="noti-icon"></i>
+                    </button>
+                </li>
+                <li class="d-none d-lg-block">
+                    <div class="position-relative topbar-search">
+                        <input type="text" class="form-control bg-light bg-opacity-75 border-light ps-4" placeholder="{% trans 'Search...' %}">
+                        <i class="mdi mdi-magnify fs-16 position-absolute text-muted top-50 translate-middle-y ms-2"></i>
+                    </div>
+                </li>
+            </ul>
+            <ul class="list-unstyled topnav-menu mb-0 d-flex align-items-center">
+    
+                <li class="dropdown notification-list topbar-dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                        <i data-feather="bell" class="noti-icon"></i>
+                        <span class="badge bg-danger rounded-circle noti-icon-badge">9</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end dropdown-lg">
+
+                        <!-- item-->
+                        <div class="dropdown-item noti-title">
+                            <h5 class="m-0">
+                                <span class="float-end">
+                                    <a href="" class="text-dark">
+                                        <small>{% trans "Clear All" %}</small>
+                                    </a>
+                                </span>{% trans "Notification" %}
+                            </h5>
+                        </div>
+
+                        <div class="noti-scroll" data-simplebar>
+
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item text-muted link-primary active">
+                                <div class="notify-icon">
+                                    <img src="/assets/images/users/user-12.jpg" class="img-fluid rounded-circle" alt="" />
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <p class="notify-details">Carl Steadham</p>
+                                    <small class="text-muted">{% trans "5 min ago" %}</small>
+                                </div>
+                                <p class="mb-0 user-msg">
+                                    <small class="fs-14">{% trans "Completed" %} <span class="text-reset">{% trans "Improve workflow in Figma" %}</span></small>
+                                </p>
+                            </a>
+
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item text-muted link-primary">
+                                <div class="notify-icon">
+                                    <img src="/assets/images/users/user-2.jpg" class="img-fluid rounded-circle" alt="" />
+                                </div>
+                                <div class="notify-content">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <p class="notify-details">Olivia McGuire</p>
+                                        <small class="text-muted">{% trans "1 min ago" %}</small>
+                                    </div>
+                                    <p class="mb-1 user-msg">
+                                        <small class="fs-14">{% trans "Added file to" %} <span class="text-reset text-truncate">{% trans "Create dark mode for our iOS" %}</span></small>
+                                    </p>
+
+                                    <div class="d-flex mt-2 align-items-center">
+                                        <div class="notify-sub-icon">
+                                            <i class="mdi mdi-download-box text-dark"></i>
+                                        </div>
+
+                                        <div>
+                                            <p class="notify-details mb-0">dark-themes.zip</p>
+                                            <small class="text-muted">2.4 MB</small>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </a>
+
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item text-muted link-primary">
+                                <div class="notify-icon">
+                                    <img src="/assets/images/users/user-3.jpg" class="img-fluid rounded-circle" alt="" /> 
+                                </div>
+                                <div class="notify-content">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <p class="notify-details">Travis Williams</p>
+                                        <small class="text-muted">{% trans "7 min ago" %}</small>
+                                    </div>
+                                    <p class="mb-1 user-msg">
+                                        <small class="fs-14">{% trans "Mentioned you in the" %} <span class="text-reset text-truncate">{% trans "Rewrite text-button" %}</span></small>
+                                    </p>
+                                    <p class="noti-mentioned p-2 rounded-2 mb-0 mt-2"><span class="text-primary">@Patryk</span> {% trans "Please make sure that you're...." %}</p>
+                                </div>
+                            </a>
+
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item text-muted link-primary">
+                                <div class="notify-icon">
+                                    <img src="/assets/images/users/user-8.jpg" class="img-fluid rounded-circle" alt="" />
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <p class="notify-details">Violette Lasky</p>
+                                    <small class="text-muted">{% trans "5 min ago" %}</small>
+                                </div>
+                                <p class="mb-0 user-msg">
+                                    <small class="fs-14">{% trans "Completed" %} <span class="text-reset">{% trans "Create new components" %}</span></small>
+                                </p>
+                            </a>
+
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item text-muted link-primary">
+                                <div class="notify-icon">
+                                    <img src="/assets/images/users/user-5.jpg" class="img-fluid rounded-circle" alt="" />
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <p class="notify-details">Ralph Edwards</p>
+                                    <small class="text-muted">{% trans "5 min ago" %}</small>
+                                </div>
+                                <p class="mb-0 user-msg">
+                                    <small class="fs-14">{% trans "Completed" %} <span class="text-reset">{% trans "Improve workflow in React" %}</span></small>
+                                </p>
+                            </a>
+
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item text-muted link-primary">
+                                <div class="notify-icon">
+                                    <img src="/assets/images/users/user-6.jpg" class="img-fluid rounded-circle" alt="" /> 
+                                </div>
+                                <div class="notify-content">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <p class="notify-details">Jocab jones</p>
+                                        <small class="text-muted">{% trans "7 min ago" %}</small>
+                                    </div>
+                                    <p class="mb-1 user-msg">
+                                        <small class="fs-14">{% trans "Mentioned you in the" %} <span class="text-reset text-truncate">{% trans "Rewrite text-button" %}</span></small>
+                                    </p>
+                                    <p class="noti-mentioned p-2 rounded-2 mb-0 mt-2"><span class="text-reset">@Patryk</span> {% trans "Please make sure that you're...." %}</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- All-->
+                        <a href="javascript:void(0);" class="dropdown-item text-center text-primary notify-item notify-all">
+                            {% trans "View all" %}
+                            <i class="fe-arrow-right"></i>
+                        </a>
+
+                    </div>
+                </li>
+
+                <li class="dropdown notification-list topbar-dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">
+                        <i data-feather="globe" class="noti-icon"></i>
+                        <span class="align-middle d-none d-sm-inline-block">{{ LANGUAGE_CODE|upper }}</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end">
+                        {% get_current_language as LANGUAGE_CODE %}
+                        {% get_available_languages as LANGUAGES %}
+                        {% get_language_info_list for LANGUAGES as languages %}
+                        
+                        <form id="language-form" action="{% url 'set_language' %}" method="post">
+                            {% csrf_token %}
+                            <input type="hidden" name="next" value="{{ request.path }}">
+                            
+                            {% for language in languages %}
+                                <button type="submit" 
+                                        name="language" 
+                                        value="{{ language.code }}"
+                                        class="dropdown-item notify-item {% if language.code == LANGUAGE_CODE %}active{% endif %}">
+                                    <span class="align-middle">{{ language.name_local }}</span>
+                                </button>
+                            {% endfor %}
+                        </form>
+                    </div>
+                </li>
+
+                <li class="dropdown notification-list topbar-dropdown">
+                    <a class="nav-link dropdown-toggle nav-user me-0" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                        <img src="/assets/images/users/user-11.jpg" alt="user-image" class="rounded-circle" id="currentUserAvatar">
+                        <span class="pro-user-name ms-1">
+                            <span id="currentUserName">{{ current_profile.display_name }}</span> <i class="mdi mdi-chevron-down"></i> 
+                        </span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end profile-dropdown">
+                        <!-- Current Profile Section -->
+                        <div class="border-bottom">
+                            <div class="dropdown-item d-flex flex-column align-items-center py-2" style="cursor: pointer;">
+                                <small class="text-muted mb-2">{{ user.email }}</small>
+                                <div class="position-relative mb-2">
+                                    <img src="/assets/images/users/user-11.jpg" alt="user-image" class="rounded-circle" height="48">
+                                    {% if current_profile.is_primary %}
+                                        <span class="position-absolute bottom-0 end-0 badge border border-light rounded-circle bg-success p-1"><span class="visually-hidden">{% trans "Primary Profile" %}</span></span>
+                                    {% endif %}
+                                </div>
+                                <h6 class="mb-0 text-truncate">{{ current_profile.display_name }}</h6>
+                            </div>
+                        </div>
+
+                        <!-- Other Profiles Section -->
+                        <div>
+                            <div class="dropdown-header">
+                                <small class="text-muted">{% trans "Other Profiles" %}</small>
+                            </div>
+                            {% for profile in profiles %}
+                                {% if profile != current_profile %}
+                                <div class="dropdown-item d-flex align-items-center py-2" 
+                                        onclick="switchUserProfile('{{ forloop.counter0 }}', '{{ profile.default_language }}')"
+                                     style="cursor: pointer;">
+                                    <div class="position-relative">
+                                        <img src="/assets/images/users/user-11.jpg" alt="user-image" class="rounded-circle me-2" height="32">
+                                       
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h6 class="mb-0 text-truncate">{{ profile.display_name }}</h6>
+                                        {% if profile.is_primary %}
+                                        <small class="text-danger py-1 rounded-1 small mt-1">{% trans "Default" %}</small>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+
+
+                        <a href="/pages-profile" class="dropdown-item notify-item">
+                            <i class="mdi mdi-account-circle-outline fs-16 align-middle me-1"></i>
+                            <span>{% trans "My Account" %}</span>
+                        </a>
+
+                        <a href="/change-password" class="dropdown-item notify-item">
+                            <i class="mdi mdi-lock-reset fs-16 align-middle me-1"></i>
+                            <span>{% trans "Change Password" %}</span>
+                        </a>
+
+                        <a href="/auth-lock-screen" class="dropdown-item notify-item">
+                            <i class="mdi mdi-lock-outline fs-16 align-middle me-1"></i>
+                            <span>{% trans "Lock Screen" %}</span>
+                        </a>
+
+                        <div class="dropdown-divider"></div>
+
+                        <a href="/auth-logout" class="dropdown-item notify-item">
+                            <i class="mdi mdi-location-exit fs-16 align-middle me-1"></i>
+                            <span>{% trans "Logout" %}</span>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+<!-- end Topbar -->
+
+<script>
+
+const decodeHtmlEntities = (str) => {
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(str, "text/html");
+    const formattedString = doc.documentElement.textContent
+        .replace(/'/g, '"')  // Replace single quotes with double quotes
+        .replace(/\(/g, "[") // Replace opening parentheses with square brackets
+        .replace(/\)/g, "]");
+
+    const listLanguages = JSON.parse(formattedString).map(item => item[0]);
+    return listLanguages;
+};
+
+function switchUserProfile(profileIndex, defaultLanguage) {
+    if(!profileIndex) return;
+    console.log(defaultLanguage);
+    
+    // Get current URL path
+    const currentPath = window.location.pathname;
+    const pathParts = currentPath.split('/').filter(Boolean); // Remove empty strings
+    let newPath = '';
+    
+    // Only add language prefix if not English
+    let remainingPath = '';
+    if (defaultLanguage !== 'en') {
+        remainingPath = !isNaN(pathParts[0]) ? pathParts.slice(1).join('/') : pathParts.slice(2).join('/');
+        newPath = `/${defaultLanguage}/${profileIndex}/`;
+    } else {
+        remainingPath = pathParts.slice(2).join('/');
+        newPath = `/${profileIndex}/`;
+    }
+    
+    // Get all parts after language and profile index (if they exist)
+    if (remainingPath) {
+        newPath += remainingPath;
+    }
+    
+    // Add trailing slash if needed
+    if (!newPath.endsWith('/')) {
+        newPath += '/';
+    }
+
+    console.log(newPath);
+    
+    // Redirect to new URL
+    window.location.href = newPath;
+}
+
+// Initialize current profile ID from server-side value
+document.addEventListener('DOMContentLoaded', () => {
+    const currentProfile = '{{ current_profile.id }}';
+    if (currentProfile) {
+        localStorage.setItem('currentProfileId', currentProfile);
+    }
+});
+
+function setLanguage(languageCode) {
+    // Create and configure form
+    const form = createLanguageForm(languageCode);
+    
+    // Calculate next path
+    const nextPath = calculateNextPath(languageCode);
+    
+    // Add next path to form
+    addNextPathToForm(form, nextPath);
+
+    // Submit form
+    document.body.appendChild(form);
+    form.submit();
+}
+
+function createLanguageForm(languageCode) {
+    const form = document.createElement('form');
+    form.method = 'post';
+    form.action = "{% url 'set_language' %}";
+
+    // Add CSRF token
+    const csrfToken = document.createElement('input');
+    csrfToken.type = 'hidden';
+    csrfToken.name = 'csrfmiddlewaretoken';
+    csrfToken.value = '{{ csrf_token }}';
+    form.appendChild(csrfToken);
+
+    // Add language input
+    const langInput = document.createElement('input');
+    langInput.type = 'hidden';
+    langInput.name = 'language';
+    langInput.value = languageCode;
+    form.appendChild(langInput);
+
+    return form;
+}
+
+function calculateNextPath(languageCode) {
+    const currentPath = window.location.pathname;
+    const pathParts = currentPath.split('/').filter(Boolean);
+    const profileIndex = pathParts.find((part, index) => !isNaN(part) && index <= 1);
+
+    let nextPath = '';
+    if (languageCode === 'en') {
+        nextPath = handleEnglishPath(pathParts, profileIndex, currentPath);
+    } else {
+        nextPath = handleNonEnglishPath(pathParts, profileIndex, languageCode);
+    }
+
+    return ensureTrailingSlash(nextPath);
+}
+
+function handleEnglishPath(pathParts, profileIndex, currentPath) {
+    if (profileIndex) {
+        return `/${profileIndex}/${pathParts.slice(2).join('/')}`;
+    }
+    return currentPath;
+}
+
+function handleNonEnglishPath(pathParts, profileIndex, languageCode) {
+    if (profileIndex) {
+        const isEnglish = pathParts[0] === profileIndex;
+        return `/${languageCode}/${profileIndex}/${pathParts.slice(isEnglish ? 1 : 2).join('/')}`;
+    }
+    return `/${languageCode}${window.location.pathname}`;
+}
+
+function ensureTrailingSlash(path) {
+    return path.endsWith('/') ? path : `${path}/`;
+}
+
+function addNextPathToForm(form, nextPath) {
+    const nextInput = document.createElement('input');
+    nextInput.type = 'hidden';
+    nextInput.name = 'next';
+    nextInput.value = nextPath;
+    form.appendChild(nextInput);
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    const languageForm = document.getElementById('language-form');
+    if (languageForm) {
+        languageForm.querySelectorAll('button').forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                setLanguage(this.value);
+            });
+        });
+    }
+});
+</script>

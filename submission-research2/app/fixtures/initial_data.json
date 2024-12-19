@@ -1,0 +1,144 @@
+{
+    "users": [
+        {
+            "model": "app.user",
+            "pk": 1,
+            "fields": {
+                "email": "system@example.com",
+                "password": "pbkdf2_sha256$600000$salt$hashedpassword",
+                "is_active": true,
+                "is_staff": true,
+                "is_superuser": true,
+                "date_joined": "2024-01-01T00:00:00Z",
+                "last_login": null,
+                "password_changed_at": null,
+                "reset_token": null,
+                "reset_token_expires": null
+            }
+        },
+        {
+            "model": "app.user",
+            "pk": 2,
+            "fields": {
+                "email": "mhungict99@gmail.com",
+                "password": "pbkdf2_sha256$600000$salt$hashedpassword",
+                "is_active": true,
+                "is_staff": true,
+                "is_superuser": true,
+                "date_joined": "2024-01-01T00:00:00Z",
+                "last_login": null,
+                "password_changed_at": null,
+                "reset_token": null,
+                "reset_token_expires": null
+            }
+        }
+    ],
+    "companies": [
+        {
+            "model": "app.company",
+            "pk": 1,
+            "fields": {
+                "name": "HelloWorld Company",
+                "description": "Initial company for the system",
+                "created_at": "2024-01-01T00:00:00Z",
+                "updated_at": "2024-01-01T00:00:00Z",
+                "is_active": true
+            }
+        },
+        {
+            "model": "app.company",
+            "pk": 2,
+            "fields": {
+                "name": "Nobisoft",
+                "description": "A powerful company",
+                "created_at": "2024-01-01T00:00:00Z",
+                "updated_at": "2024-01-01T00:00:00Z",
+                "is_active": true
+            }
+        },
+        {
+            "model": "app.company",
+            "pk": 3,
+            "fields": {
+                "name": "Another company",
+                "description": "A company",
+                "created_at": "2024-01-01T00:00:00Z",
+                "updated_at": "2024-01-01T00:00:00Z",
+                "is_active": true
+            }
+        },
+        {
+            "model": "app.company",
+            "pk": 4,
+            "fields": {
+                "name": "Super Nobisoft",
+                "description": "A super company",
+                "created_at": "2024-01-01T00:00:00Z",
+                "updated_at": "2024-01-01T00:00:00Z",
+                "is_active": true
+            }
+        }
+    ],
+    "profiles": [
+        {
+            "model": "app.userprofile",
+            "pk": 1,
+            "fields": {
+                "user": 1,
+                "company": 1,
+                "display_name": "System Admin",
+                "avatar": null,
+                "default_language": "en",
+                "is_primary": true,
+                "is_active": true,
+                "created_at": "2024-01-01T00:00:00Z",
+                "updated_at": "2024-01-01T00:00:00Z"
+            }
+        },
+        {
+            "model": "app.userprofile",
+            "pk": 2,
+            "fields": {
+                "user": 1,
+                "company": 2,
+                "display_name": "Admin",
+                "avatar": null,
+                "default_language": "es",
+                "is_primary": false,
+                "is_active": true,
+                "created_at": "2024-01-01T00:00:00Z",
+                "updated_at": "2024-01-01T00:00:00Z"
+            }
+        },
+        {
+            "model": "app.userprofile",
+            "pk": 3,
+            "fields": {
+                "user": 1,
+                "company": 3,
+                "display_name": "User",
+                "avatar": null,
+                "default_language": "fr",
+                "is_primary": false,
+                "is_active": true,
+                "created_at": "2024-01-01T00:00:00Z",
+                "updated_at": "2024-01-01T00:00:00Z"
+            }
+        },
+        {
+            "model": "app.userprofile",
+            "pk": 4,
+            "fields": {
+                "user": 2,
+                "company": 4,
+                "display_name": "User",
+                "avatar": null,
+                "default_language": "fr",
+                "is_primary": false,
+                "is_active": true,
+                "created_at": "2024-01-01T00:00:00Z",
+                "updated_at": "2024-01-01T00:00:00Z"
+            }
+        }
+    ]
+} 

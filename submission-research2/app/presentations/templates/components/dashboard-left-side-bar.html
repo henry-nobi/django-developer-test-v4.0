@@ -1,0 +1,393 @@
+{% load static %}
+{% load i18n %}
+<!-- Left Sidebar Start -->
+<div class="app-sidebar-menu">
+    <div class="h-100" data-simplebar>
+
+        <!--- Sidemenu -->
+        <div id="sidebar-menu">
+
+            <div class="logo-box">
+                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/" class="logo logo-light">
+                    <span class="logo-sm">
+                        <img src="/assets/images/logo-sm.png" alt="" height="22">
+                    </span>
+                    <span class="logo-lg">
+                        <img src="/assets/images/logo-light.png" alt="" height="24">
+                    </span>
+                </a>
+                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/" class="logo logo-dark">
+                    <span class="logo-sm">
+                        <img src="/assets/images/logo-sm.png" alt="" height="22">
+                    </span>
+                    <span class="logo-lg">
+                        <img src="/assets/images/logo-dark.png" alt="" height="24">
+                    </span>
+                </a>
+            </div>
+
+            <ul id="side-menu">
+
+                <li class="menu-title">{% trans "Menu" %}</li>
+
+                <li>
+                    <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/">
+                        <i data-feather="home"></i>
+                        <span class="badge bg-success rounded-pill float-end">9+</span>
+                        <span> {% trans "Dashboard" %} </span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/widgets">
+                        <i data-feather="aperture"></i>
+                        <span> {% trans "Widgets" %} </span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/landing" target="_blank">
+                        <i data-feather="globe"></i>
+                        <span> {% trans "Landing" %} </span>
+                    </a>
+                </li>
+
+                <li class="menu-title">{% trans "Pages" %}</li>
+
+                <li>
+                    <a href="#sidebarAuth" data-bs-toggle="collapse">
+                        <i data-feather="users"></i>
+                        <span> {% trans "Authentication" %} </span>
+                        <span class="menu-arrow"></span>
+                    </a>
+                    <div class="collapse" id="sidebarAuth">
+                        <ul class="nav-second-level">
+                            <li>
+                                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/auth-login">{% trans "Log In" %}</a>
+                            </li>
+                            <li>
+                                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/auth-register">{% trans "Register" %}</a>
+                            </li>
+                            <li>
+                                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/auth-recoverpw">{% trans "Recover Password" %}</a>
+                            </li>
+                            <li>
+                                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/auth-lock-screen">{% trans "Lock Screen" %}</a>
+                            </li>
+                            <li>
+                                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/auth-confirm-mail">{% trans "Confirm Mail" %}</a>
+                            </li>
+                            <li>
+                                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/email-verification">{% trans "Email Verification" %}</a>
+                            </li>
+                            <li>
+                                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/auth-logout">{% trans "Logout" %}</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="/#sidebarError" data-bs-toggle="collapse">
+                        <i data-feather="alert-octagon"></i>
+                        <span> {% trans "Error Pages" %} </span>
+                        <span class="menu-arrow"></span>
+                    </a>
+                    <div class="collapse" id="sidebarError">
+                        <ul class="nav-second-level">
+                            <li>
+                                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/error-404">{% trans "Error 404" %}</a>
+                            </li>
+                            <li>
+                                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/error-500">{% trans "Error 500" %}</a>
+                            </li>
+                            <li>
+                                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/error-503">{% trans "Error 503" %}</a>
+                            </li>
+                            <li>
+                                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/error-429">{% trans "Error 429" %}</a>
+                            </li>
+                            <li>
+                                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/offline-page">{% trans "Offline Page" %}</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="/#sidebarExpages" data-bs-toggle="collapse">
+                        <i data-feather="file-text"></i>
+                        <span> {% trans "Utility" %} </span>
+                        <span class="menu-arrow"></span>
+                    </a>
+                    <div class="collapse" id="sidebarExpages">
+                        <ul class="nav-second-level">
+                            <li>
+                                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/pages-starter">{% trans "Starter" %}</a>
+                            </li>
+                            <li>
+                                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/pages-profile">{% trans "Profile" %}</a>
+                            </li>
+                            <li>
+                                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/pages-pricing">{% trans "Pricing" %}</a>
+                            </li>
+                            <li>
+                                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/pages-timeline">{% trans "Timeline" %}</a>
+                            </li>
+                            <li>
+                                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/pages-invoice">{% trans "Invoice" %}</a>
+                            </li>
+                            <li>
+                                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/pages-faqs">{% trans "FAQs" %}</a>
+                            </li>
+                            <li>
+                                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/pages-gallery">{% trans "Gallery" %}</a>
+                            </li>
+                            <li>
+                                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/pages-maintenance">{% trans "Maintenance" %}</a>
+                            </li>
+                            <li>
+                                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/pages-coming-soon">{% trans "Coming Soon" %}</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="menu-title mt-2">{% trans "General" %}</li>
+
+                <li>
+                    <a href="/#sidebarBaseui" data-bs-toggle="collapse">
+                        <i data-feather="package"></i>
+                        <span> {% trans "Components" %} </span>
+                        <span class="menu-arrow"></span>
+                    </a>
+                    <div class="collapse" id="sidebarBaseui">
+                        <ul class="nav-second-level">
+                            <li>
+                                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/ui-accordions">{% trans "Accordions" %}</a>
+                            </li>
+                            <li>
+                                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/ui-alerts">{% trans "Alerts" %}</a>
+                            </li>
+                            <li>
+                                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/ui-badges">{% trans "Badges" %}</a>
+                            </li>
+                            <li>
+                                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/ui-breadcrumb">{% trans "Breadcrumb" %}</a>
+                            </li>
+                            <li>
+                                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/ui-buttons">{% trans "Buttons" %}</a>
+                            </li>
+                            <li>
+                                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/ui-cards">{% trans "Cards" %}</a>
+                            </li>
+                            <li>
+                                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/ui-collapse">{% trans "Collapse" %}</a>
+                            </li>
+                            <li>
+                                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/ui-dropdowns">{% trans "Dropdowns" %}</a>
+                            </li>
+                            <li>
+                                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/ui-video">{% trans "Embed Video" %}</a>
+                            </li>
+                            <li>
+                                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/ui-grid">{% trans "Grid" %}</a>
+                            </li>
+                            <li>
+                                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/ui-images">{% trans "Images" %}</a>
+                            </li>
+                            <li>
+                                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/ui-list">{% trans "List Group" %}</a>
+                            </li>
+                            <li>
+                                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/ui-modals">{% trans "Modals" %}</a>
+                            </li>
+                            <li>
+                                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/ui-placeholders">{% trans "Placeholders" %}</a>
+                            </li>
+                            <li>
+                                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/ui-pagination">{% trans "Pagination" %}</a>
+                            </li>
+                            <li>
+                                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/ui-popovers">{% trans "Popovers" %}</a>
+                            </li>
+                            <li>
+                                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/ui-progress">{% trans "Progress" %}</a>
+                            </li>
+                            <li>
+                                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/ui-scrollspy">{% trans "Scrollspy" %}</a>
+                            </li>
+                            <li>
+                                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/ui-spinners">{% trans "Spinners" %}</a>
+                            </li>
+                            <li>
+                                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/ui-tabs">{% trans "Tabs" %}</a>
+                            </li>
+                            <li>
+                                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/ui-tooltips">{% trans "Tooltips" %}</a>
+                            </li>
+                            <li>
+                                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/ui-typography">{% trans "Typography" %}</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="/#sidebarAdvancedUI" data-bs-toggle="collapse">
+                        <i data-feather="cpu"></i>
+                        <span> {% trans "Extended UI" %} </span>
+                        <span class="menu-arrow"></span>
+                    </a>
+                    <div class="collapse" id="sidebarAdvancedUI">
+                        <ul class="nav-second-level">
+                            <li>
+                                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/extended-carousel">{% trans "Carousel" %}</a>
+                            </li>
+                            <li>
+                                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/extended-notifications">{% trans "Notifications" %}</a>
+                            </li>
+                            <li>
+                                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/extended-offcanvas">{% trans "Offcanvas" %}</a>
+                            </li>
+                            <li>
+                                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/extended-range-slider">{% trans "Range Slider" %}</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="/#sidebarIcons" data-bs-toggle="collapse">
+                        <i data-feather="award"></i>
+                        <span> {% trans "Icons" %} </span>
+                        <span class="menu-arrow"></span>
+                    </a>
+                    <div class="collapse" id="sidebarIcons">
+                        <ul class="nav-second-level">
+                            <li>
+                                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/icons-feather">{% trans "Feather Icons" %}</a>
+                            </li>
+                            <li>
+                                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/icons-mdi">{% trans "Material Design Icons" %}</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="/#sidebarForms" data-bs-toggle="collapse">
+                        <i data-feather="briefcase"></i>
+                        <span> {% trans "Forms" %} </span>
+                        <span class="menu-arrow"></span>
+                    </a>
+                    <div class="collapse" id="sidebarForms">
+                        <ul class="nav-second-level">
+                            <li>
+                                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/forms-elements">{% trans "General Elements" %}</a>
+                            </li>
+                            <li>
+                                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/forms-validation">{% trans "Validation" %}</a>
+                            </li>
+                            <li>
+                                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/forms-quilljs">{% trans "Quilljs Editor" %}</a>
+                            </li>
+                            <li>
+                                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/forms-pickers">{% trans "Picker" %}</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="/#sidebarTables" data-bs-toggle="collapse">
+                        <i data-feather="table"></i>
+                        <span> {% trans "Tables" %} </span>
+                        <span class="menu-arrow"></span>
+                    </a>
+                    <div class="collapse" id="sidebarTables">
+                        <ul class="nav-second-level">
+                            <li>
+                                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/tables-basic">{% trans "Basic Tables" %}</a>
+                            </li>
+                            <li>
+                                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/tables-datatables">{% trans "Data Tables" %}</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="/#sidebarCharts" data-bs-toggle="collapse">
+                        <i data-feather="pie-chart"></i>
+                        <span> {% trans "Apex Charts" %} </span>
+                        <span class="menu-arrow"></span>
+                    </a>
+                    <div class="collapse" id="sidebarCharts">
+                        <ul class="nav-second-level">
+                            <li>
+                                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/charts-line">{% trans "Line" %}</a>
+                            </li>
+                            <li>
+                                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/charts-area">{% trans "Area" %}</a>
+                            </li>
+                            <li>
+                                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/charts-column">{% trans "Column" %}</a>
+                            </li>
+                            <li>
+                                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/charts-bar">{% trans "Bar" %}</a>
+                            </li>
+                            <li>
+                                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/charts-mixed">{% trans "Mixed" %}</a>
+                            </li>
+                            <li>
+                                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/charts-timeline">{% trans "Timeline" %}</a>
+                            </li>
+                            <li>
+                                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/charts-rangearea">{% trans "Range Area" %}</a>
+                            </li>
+                            <li>
+                                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/charts-funnel">{% trans "Funnel" %}</a>
+                            </li>
+                            <li>
+                                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/charts-candlestick">{% trans "Candlestick" %}</a>
+                            </li>
+                            <li>
+                                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/charts-boxplot">{% trans "Boxplot" %}</a>
+                            </li>
+                            <li>
+                                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/charts-bubble">{% trans "Bubble" %}</a>
+                            </li>
+                            <li>
+                                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/charts-scatter">{% trans "Scatter" %}</a>
+                            </li>
+                            <li>
+                                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/charts-heatmap">{% trans "Heatmap" %}</a>
+                            </li>
+                            <li>
+                                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/charts-treemap">{% trans "Treemap" %}</a>
+                            </li>
+                            <li>
+                                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/charts-pie">{% trans "Pie" %}</a>
+                            </li>
+                            <li>
+                                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/charts-radialbar">{% trans "Radialbar" %}</a>
+                            </li>
+                            <li>
+                                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/charts-radar">{% trans "Radar" %}</a>
+                            </li>
+                            <li>
+                                <a href="{% if LANGUAGE_CODE != 'en' %}/{{ LANGUAGE_CODE }}{% endif %}/{{ profile_index }}/charts-polararea">{% trans "Polar" %}</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+        <!-- End Sidebar -->
+
+        <div class="clearfix"></div>
+
+    </div>
+</div>
+<!-- Left Sidebar End -->

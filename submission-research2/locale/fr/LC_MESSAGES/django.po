@@ -1,0 +1,1175 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDERS
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-19 20:41+0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: app/core/configs/swagger.py:15
+msgid "Canada Lab2 API"
+msgstr "API Canada Lab2"
+
+#: app/core/configs/swagger.py:17
+msgid ""
+"API documentation for Canada Lab2\n"
+"\n"
+"To authorize, use the login endpoint to get a token, then click the "
+"'Authorize' button and enter the token with the prefix 'Token ' (e.g., "
+"'Token abc123')"
+msgstr ""
+"Documentation de l'API pour Canada Lab2\n"
+"\n"
+"Pour autoriser, utilisez le point de terminaison de connexion pour obtenir "
+"un jeton, puis cliquez sur le bouton 'Autoriser' et entrez le jeton avec le "
+"préfixe 'Token ' (par exemple, 'Token abc123')"
+
+#: app/features/v1/auth/auth_controller.py:63
+msgid "Login successful"
+msgstr "Connexion réussie"
+
+#: app/features/v1/auth/auth_controller.py:68
+msgid "Invalid credentials"
+msgstr "Identifiants invalides"
+
+#: app/features/v1/auth/auth_controller.py:88
+#: app/features/v1/company/company_controller.py:37
+#: app/features/v1/company/company_controller.py:56
+#: app/features/v1/company/company_controller.py:72
+msgid "Company not found"
+msgstr "Entreprise non trouvée"
+
+#: app/features/v1/auth/auth_controller.py:117
+msgid "Registration successful"
+msgstr "Inscription réussie"
+
+#: app/features/v1/auth/auth_controller.py:133
+#: app/features/v1/user/user_controller.py:39
+#: app/features/v1/user/user_controller.py:95
+#: app/features/v1/user/user_controller.py:112 app/services/user_service.py:97
+msgid "User not found"
+msgstr "Utilisateur non trouvé"
+
+#: app/features/v1/auth/auth_controller.py:139
+msgid "Password reset email sent"
+msgstr "E-mail de réinitialisation du mot de passe envoyé"
+
+#: app/features/v1/auth/auth_controller.py:143
+msgid "Failed to send password reset email"
+msgstr "Échec de l'envoi de l'e-mail de réinitialisation du mot de passe"
+
+#: app/features/v1/auth/auth_controller.py:161
+msgid "Password reset successful"
+msgstr "Réinitialisation du mot de passe réussie"
+
+#: app/features/v1/auth/auth_controller.py:165
+msgid "Invalid reset link"
+msgstr "Lien de réinitialisation invalide"
+
+#: app/features/v1/auth/auth_controller.py:176
+msgid "Refresh token not found"
+msgstr "Jeton de rafraîchissement non trouvé"
+
+#: app/features/v1/auth/auth_controller.py:187
+msgid "Token refreshed successfully"
+msgstr "Jeton rafraîchi avec succès"
+
+#: app/features/v1/auth/auth_controller.py:197
+msgid "Invalid refresh token"
+msgstr "Jeton de rafraîchissement invalide"
+
+#: app/features/v1/auth/auth_controller.py:213
+msgid "Logged out successfully"
+msgstr "Déconnexion réussie"
+
+#: app/features/v1/auth/auth_controller.py:218
+msgid "Error during logout"
+msgstr "Erreur lors de la déconnexion"
+
+#: app/features/v1/company/company_controller.py:28
+msgid "Company created successfully"
+msgstr "Entreprise créée avec succès"
+
+#: app/features/v1/company/company_controller.py:42
+msgid "Company retrieved successfully"
+msgstr "Entreprise récupérée avec succès"
+
+#: app/features/v1/company/company_controller.py:61
+msgid "Company updated successfully"
+msgstr "Entreprise mise à jour avec succès"
+
+#: app/features/v1/company/company_controller.py:68
+msgid "Company deleted successfully"
+msgstr "Entreprise supprimée avec succès"
+
+#: app/features/v1/company/company_controller.py:84
+msgid "Companies retrieved successfully"
+msgstr "Entreprises récupérées avec succès"
+
+#: app/features/v1/user/user_controller.py:36
+msgid "User retrieved successfully"
+msgstr "Utilisateur récupéré avec succès"
+
+#: app/features/v1/user/user_controller.py:53
+msgid "Not authenticated"
+msgstr "Non authentifié"
+
+#: app/features/v1/user/user_controller.py:77
+msgid "User profile retrieved successfully"
+msgstr "Profil utilisateur récupéré avec succès"
+
+#: app/features/v1/user/user_controller.py:92
+msgid "User updated successfully"
+msgstr "Utilisateur mis à jour avec succès"
+
+#: app/features/v1/user/user_controller.py:108
+msgid "User deleted successfully"
+msgstr "Utilisateur supprimé avec succès"
+
+#: app/features/v1/user/user_controller.py:134
+msgid "Successfully logged out"
+msgstr "Déconnexion réussie"
+
+#: app/features/v1/user/user_controller.py:139
+msgid "An error occurred during logout"
+msgstr "Une erreur s'est produite lors de la déconnexion"
+
+#: app/features/v1/user/user_controller.py:165
+msgid "Both current and new password are required"
+msgstr "Le mot de passe actuel et le nouveau mot de passe sont requis"
+
+#: app/features/v1/user/user_controller.py:171
+msgid "New password must be at least 6 characters long"
+msgstr "Le nouveau mot de passe doit contenir au moins 6 caractères"
+
+#: app/features/v1/user/user_controller.py:179
+msgid "Password changed successfully"
+msgstr "Mot de passe modifié avec succès"
+
+#: app/features/v1/user/user_controller.py:184
+msgid "Current password is incorrect"
+msgstr "Le mot de passe actuel est incorrect"
+
+#: app/features/v1/user/user_controller.py:242
+msgid "User profiles retrieved successfully"
+msgstr "Profils utilisateurs récupérés avec succès"
+
+#: app/features/v1/user_profile/user_profile_controller.py:32
+msgid "Profile created successfully"
+msgstr "Profil créé avec succès"
+
+#: app/features/v1/user_profile/user_profile_controller.py:43
+#: app/features/v1/user_profile/user_profile_controller.py:62
+#: app/features/v1/user_profile/user_profile_controller.py:80
+msgid "Profile not found"
+msgstr "Profil non trouvé"
+
+#: app/features/v1/user_profile/user_profile_controller.py:48
+msgid "Profile retrieved successfully"
+msgstr "Profil récupéré avec succès"
+
+#: app/features/v1/user_profile/user_profile_controller.py:67
+msgid "Profile updated successfully"
+msgstr "Profil mis à jour avec succès"
+
+#: app/features/v1/user_profile/user_profile_controller.py:76
+msgid "Profile deleted successfully"
+msgstr "Profil supprimé avec succès"
+
+#: app/features/v1/user_profile/user_profile_controller.py:91
+msgid "Profiles retrieved successfully"
+msgstr "Profils récupérés avec succès"
+
+#: app/models/company.py:6
+msgid "name"
+msgstr "nom"
+
+#: app/models/company.py:7
+msgid "description"
+msgstr "description"
+
+#: app/models/company.py:8 app/models/user_profile.py:18
+msgid "created at"
+msgstr "créé le"
+
+#: app/models/company.py:9 app/models/user_profile.py:19
+msgid "updated at"
+msgstr "mis à jour le"
+
+#: app/models/company.py:10 app/models/user_profile.py:20
+msgid "is active"
+msgstr "est actif"
+
+#: app/models/company.py:13
+msgid "company"
+msgstr "entreprise"
+
+#: app/models/company.py:14
+msgid "companies"
+msgstr "entreprises"
+
+#: app/models/user.py:9
+msgid "The Email field must be set"
+msgstr "Le champ Email doit être renseigné"
+
+#: app/models/user.py:21
+msgid "Superuser must have is_staff=True."
+msgstr "Le superutilisateur doit avoir is_staff=True."
+
+#: app/models/user.py:23
+msgid "Superuser must have is_superuser=True."
+msgstr "Le superutilisateur doit avoir is_superuser=True."
+
+#: app/models/user.py:28
+msgid "email address"
+msgstr "adresse e-mail"
+
+#: app/models/user.py:29
+msgid "password"
+msgstr "mot de passe"
+
+#: app/models/user.py:30
+msgid "last login"
+msgstr "dernière connexion"
+
+#: app/models/user.py:31
+msgid "active"
+msgstr "actif"
+
+#: app/models/user.py:32
+msgid "staff status"
+msgstr "statut du personnel"
+
+#: app/models/user.py:33
+msgid "superuser status"
+msgstr "statut de superutilisateur"
+
+#: app/models/user.py:34
+msgid "date joined"
+msgstr "date d'inscription"
+
+#: app/models/user.py:35
+msgid "password changed at"
+msgstr "mot de passe modifié le"
+
+#: app/models/user.py:36
+msgid "reset token"
+msgstr "jeton de réinitialisation"
+
+#: app/models/user.py:37
+msgid "reset token expires"
+msgstr "expiration du jeton de réinitialisation"
+
+#: app/models/user.py:45
+msgid "user"
+msgstr "utilisateur"
+
+#: app/models/user.py:46
+msgid "users"
+msgstr "utilisateurs"
+
+#: app/models/user_profile.py:14
+msgid "display name"
+msgstr "nom d'affichage"
+
+#: app/models/user_profile.py:15
+msgid "avatar"
+msgstr "avatar"
+
+#: app/models/user_profile.py:16
+msgid "default language"
+msgstr "langue par défaut"
+
+#: app/models/user_profile.py:17
+msgid "is primary"
+msgstr "est principal"
+
+#: app/models/user_profile.py:23
+msgid "user profile"
+msgstr "profil utilisateur"
+
+#: app/models/user_profile.py:24
+msgid "user profiles"
+msgstr "profils utilisateurs"
+
+#: app/presentations/pages/index.html:4
+msgid "Home"
+msgstr "Accueil"
+
+#: app/presentations/pages/index.html:10
+#: app/presentations/templates/components/dashboard-left-side-bar.html:37
+msgid "Dashboard"
+msgstr "Tableau de bord"
+
+#: app/presentations/pages/index.html:20
+#, fuzzy
+#| msgid "Total Budget"
+msgid "Total Images"
+msgstr "Images totales"
+
+#: app/presentations/pages/index.html:21 app/presentations/pages/index.html:43
+#: app/presentations/pages/index.html:65 app/presentations/pages/index.html:87
+msgid "Space"
+msgstr "Espace"
+
+#: app/presentations/pages/index.html:23 app/presentations/pages/index.html:45
+#: app/presentations/pages/index.html:67 app/presentations/pages/index.html:89
+#, fuzzy
+#| msgid "last login"
+msgid "Last month"
+msgstr "Mois dernier"
+
+#: app/presentations/pages/index.html:42
+#, fuzzy
+#| msgid "Embed Video"
+msgid "View Video"
+msgstr "Voir la vidéo"
+
+#: app/presentations/pages/index.html:64
+msgid "Listen Music"
+msgstr "Écouter la musique"
+
+#: app/presentations/pages/index.html:86
+msgid "Document File"
+msgstr "Fichier document"
+
+#: app/presentations/pages/index.html:109
+msgid "Repeat Customer Rate"
+msgstr "Taux de clients fidèles"
+
+#: app/presentations/pages/index.html:125
+msgid "Top Customers"
+msgstr "Meilleurs clients"
+
+#: app/presentations/pages/index.html:131
+msgid "Last 28 Days"
+msgstr "28 derniers jours"
+
+#: app/presentations/pages/index.html:132
+#, fuzzy
+#| msgid "last login"
+msgid "Last Month"
+msgstr "Mois dernier"
+
+#: app/presentations/pages/index.html:133
+msgid "Last Year"
+msgstr "Année dernière"
+
+#: app/presentations/pages/index.html:152
+#: app/presentations/pages/index.html:168
+#: app/presentations/pages/index.html:184
+#: app/presentations/pages/index.html:201
+#: app/presentations/pages/index.html:218
+msgid "Verified Purchases"
+msgstr "Achats vérifiés"
+
+#: app/presentations/pages/index.html:240
+msgid "Top Selling Products"
+msgstr "Produits les plus vendus"
+
+#: app/presentations/pages/index.html:250
+msgid "Product"
+msgstr "Produit"
+
+#: app/presentations/pages/index.html:251
+#: app/presentations/templates/components/dashboard-left-side-bar.html:214
+msgid "Progress"
+msgstr "Progression"
+
+#: app/presentations/pages/index.html:252
+msgid "Status"
+msgstr "Statut"
+
+#: app/presentations/pages/index.html:253
+msgid "Sales"
+msgstr "Ventes"
+
+#: app/presentations/pages/index.html:266
+msgid "Dresses"
+msgstr "Robes"
+
+#: app/presentations/pages/index.html:274
+#: app/presentations/pages/index.html:362
+msgid "Medium"
+msgstr "Moyen"
+
+#: app/presentations/pages/index.html:288
+#, fuzzy
+#| msgid "Feather Icons"
+msgid "Leather Bags"
+msgstr "Sacs en cuir"
+
+#: app/presentations/pages/index.html:296
+#: app/presentations/pages/index.html:340
+msgid "Low"
+msgstr "Faible"
+
+#: app/presentations/pages/index.html:310
+msgid "Shoes"
+msgstr "Chaussures"
+
+#: app/presentations/pages/index.html:318
+msgid "High"
+msgstr "Élevé"
+
+#: app/presentations/pages/index.html:332
+msgid "Headphone"
+msgstr "Casque"
+
+#: app/presentations/pages/index.html:354
+msgid "Camera"
+msgstr "Appareil photo"
+
+#: app/presentations/pages/index.html:381
+msgid "Author Sales"
+msgstr "Ventes par auteur"
+
+#: app/presentations/pages/pages-profile.html:4
+#: app/presentations/pages/pages-profile.html:9
+#: app/presentations/pages/pages-profile.html:17
+#: app/presentations/templates/components/dashboard-left-side-bar.html:128
+msgid "Profile"
+msgstr "Profil"
+
+#: app/presentations/pages/pages-profile.html:15
+#: app/presentations/templates/components/dashboard-left-side-bar.html:160
+msgid "Components"
+msgstr "Composants"
+
+#: app/presentations/pages/pages-profile.html:32
+msgid "profile image"
+msgstr "image de profil"
+
+#: app/presentations/pages/pages-profile.html:70
+msgid "About"
+msgstr "À propos"
+
+#: app/presentations/pages/pages-profile.html:81
+msgid "Work experience"
+msgstr "Expérience professionnelle"
+
+#: app/presentations/pages/pages-profile.html:95
+msgid "Education"
+msgstr "Formation"
+
+#: app/presentations/pages/pages-profile.html:110
+msgid "About me"
+msgstr "À propos de moi"
+
+#: app/presentations/pages/pages-profile.html:113
+msgid ""
+"Geetings, fellow software enthusiasts! I'm thrilled to see your intereset in "
+"exploring my profile. I'm Christian Mayo, a 24-year-old software engineer "
+"from the United Kingdom. My educational path led me to earn a Bachelor's "
+"Degeer in Computer Science, specializing in Software Engineering. With this "
+"qualification, I'm equipped to dive into the world of coding and "
+"develooment,ready to tackle exciting projects and contribute to cutting-edge "
+"technological advancement..."
+msgstr ""
+"Salutations, passionnés de logiciels ! Je suis ravi de voir votre intérêt "
+"pour l'exploration de mon profil. Je suis Christian Mayo, un ingénieur "
+"logiciel de 24 ans originaire du Royaume-Uni. Mon parcours éducatif m'a "
+"permis d'obtenir une licence en informatique, spécialisée en génie logiciel. "
+"Avec cette qualification, je suis équipé pour plonger dans le monde du "
+"codage et du développement, prêt à relever des projets passionnants et à "
+"contribuer aux avancées technologiques de pointe..."
+
+#: app/presentations/pages/pages-profile.html:120
+msgid "Contact Details"
+msgstr "Coordonnées"
+
+#: app/presentations/pages/pages-profile.html:126
+msgid "Email Address"
+msgstr "Adresse e-mail"
+
+#: app/presentations/pages/pages-profile.html:136
+msgid "Social Media"
+msgstr "Réseaux sociaux"
+
+#: app/presentations/pages/pages-profile.html:171
+msgid "Location"
+msgstr "Localisation"
+
+#: app/presentations/pages/pages-profile.html:172
+msgid "Melbourne, Australia"
+msgstr "Melbourne, Australie"
+
+#: app/presentations/pages/pages-profile.html:178
+msgid "Skills"
+msgstr "Compétences"
+
+#: app/presentations/pages/pages-profile.html:182
+msgid "User Interface"
+msgstr "Interface utilisateur"
+
+#: app/presentations/pages/pages-profile.html:185
+msgid "User Experience"
+msgstr "Expérience utilisateur"
+
+#: app/presentations/pages/pages-profile.html:188
+msgid "Interaction Design"
+msgstr "Design d'interaction"
+
+#: app/presentations/pages/pages-profile.html:191
+msgid "3D Design"
+msgstr "Design 3D"
+
+#: app/presentations/pages/pages-profile.html:194
+msgid "Information Architecture"
+msgstr "Architecture de l'information"
+
+#: app/presentations/pages/pages-profile.html:197
+msgid "User Research"
+msgstr "Recherche utilisateur"
+
+#: app/presentations/pages/pages-profile.html:200
+msgid "Wireframing"
+msgstr "Maquettage"
+
+#: app/presentations/pages/pages-profile.html:211
+msgid "Projects"
+msgstr "Projets"
+
+#: app/presentations/pages/pages-profile.html:220
+msgid "Website Developing"
+msgstr "Développement web"
+
+#: app/presentations/pages/pages-profile.html:225
+#: app/presentations/pages/pages-profile.html:247
+#: app/presentations/pages/pages-profile.html:269
+#: app/presentations/pages/pages-profile.html:291
+msgid "Total Budget"
+msgstr "Budget total"
+
+#: app/presentations/pages/pages-profile.html:229
+#: app/presentations/pages/pages-profile.html:251
+#: app/presentations/pages/pages-profile.html:273
+#: app/presentations/pages/pages-profile.html:295
+msgid "More Details"
+msgstr "Plus de détails"
+
+#: app/presentations/pages/pages-profile.html:242
+msgid "Algorithm Developing"
+msgstr "Développement d'algorithmes"
+
+#: app/presentations/pages/pages-profile.html:264
+msgid "Digital Marketing"
+msgstr "Marketing digital"
+
+#: app/presentations/pages/pages-profile.html:286
+msgid "Mobile Developing"
+msgstr "Développement mobile"
+
+#: app/presentations/pages/pages-profile.html:310
+msgid "Expertise"
+msgstr "Expertise"
+
+#: app/presentations/pages/pages-profile.html:318
+msgid "Photoshop"
+msgstr "Photoshop"
+
+#: app/presentations/pages/pages-profile.html:340
+msgid "illustrator"
+msgstr "Illustrator"
+
+#: app/presentations/pages/pages-profile.html:361
+msgid "HTML"
+msgstr "HTML"
+
+#: app/presentations/pages/pages-profile.html:382
+msgid "CSS"
+msgstr "CSS"
+
+#: app/presentations/pages/pages-profile.html:403
+msgid "Javascript"
+msgstr "Javascript"
+
+#: app/presentations/pages/pages-profile.html:424
+msgid "Php"
+msgstr "PHP"
+
+#: app/presentations/pages/pages-profile.html:450
+msgid "Experience"
+msgstr "Expérience"
+
+#: app/presentations/pages/pages-profile.html:468
+msgid "Sr. Product Designer at Thoughtworks Canada"
+msgstr "Designer produit senior chez Thoughtworks Canada"
+
+#: app/presentations/pages/pages-profile.html:471
+msgid "Feb 2022 - Oct 2023 / 11 Month"
+msgstr "Fév 2022 - Oct 2023 / 11 mois"
+
+#: app/presentations/pages/pages-profile.html:474
+#: app/presentations/pages/pages-profile.html:497
+#: app/presentations/pages/pages-profile.html:517
+#: app/presentations/pages/pages-profile.html:543
+#: app/presentations/pages/pages-profile.html:566
+#: app/presentations/pages/pages-profile.html:586
+msgid ""
+"Underlook 6 dynamic projects withing just 8 months, showcasing my "
+"versatility and proactiveapprocach. Notable accomplishments include:- "
+"Designed & Developed a responsive web app for Canada's permier sportswear "
+"brand."
+msgstr ""
+"A supervisé 6 projets dynamiques en seulement 8 mois, démontrant ma "
+"polyvalence et mon approche proactive. Réalisations notables incluent : "
+"Conception et développement d'une application web responsive pour une marque "
+"de vêtements de sport canadienne de premier plan."
+
+#: app/presentations/pages/pages-profile.html:491
+msgid "Sr. Product Designer at Google"
+msgstr "Designer produit senior chez Google"
+
+#: app/presentations/pages/pages-profile.html:494
+msgid "Jan 2021 - Feb 2022 / 13 Month"
+msgstr "Jan 2021 - Fév 2022 / 13 mois"
+
+#: app/presentations/pages/pages-profile.html:512
+msgid "Sr. Web Developer"
+msgstr "Développeur web senior"
+
+#: app/presentations/pages/pages-profile.html:514
+msgid "March 2020 - Feb 2021 / 11 Month"
+msgstr "Mars 2020 - Fév 2021 / 11 mois"
+
+#: app/presentations/pages/pages-profile.html:537
+msgid "Web Developer and Designer"
+msgstr "Développeur et designer web"
+
+#: app/presentations/pages/pages-profile.html:540
+msgid "Fab 2019 - Feb 2020 / 12 Month"
+msgstr "Fév 2019 - Fév 2020 / 12 mois"
+
+#: app/presentations/pages/pages-profile.html:560
+msgid "Mobile Developer & Algo Expert"
+msgstr "Développeur mobile & expert en algorithmes"
+
+#: app/presentations/pages/pages-profile.html:563
+msgid "Fab 2017 - Feb 2019 / 24 Month"
+msgstr "Fév 2017 - Fév 2019 / 24 mois"
+
+#: app/presentations/pages/pages-profile.html:581
+msgid "UI /UX Designer"
+msgstr "Designer UI/UX"
+
+#: app/presentations/pages/pages-profile.html:583
+msgid "April 2016 - Dec 2016 / 9 Month"
+msgstr "Avril 2016 - Déc 2016 / 9 mois"
+
+#: app/presentations/pages/pages-profile.html:601
+msgid "My Education"
+msgstr "Ma formation"
+
+#: app/presentations/pages/pages-profile.html:610
+msgid "MSC (IT) - 2020"
+msgstr "Master en informatique - 2020"
+
+#: app/presentations/pages/pages-profile.html:613
+msgid "The University of Melbourne"
+msgstr "L'Université de Melbourne"
+
+#: app/presentations/pages/pages-profile.html:614
+#: app/presentations/pages/pages-profile.html:632
+msgid "Science"
+msgstr "Sciences"
+
+#: app/presentations/pages/pages-profile.html:615
+#: app/presentations/pages/pages-profile.html:633
+#: app/presentations/pages/pages-profile.html:649
+msgid "Regular"
+msgstr "Régulier"
+
+#: app/presentations/pages/pages-profile.html:626
+msgid "Bachelor Of Science - 2018"
+msgstr "Licence en Sciences - 2018"
+
+#: app/presentations/pages/pages-profile.html:630
+msgid "Monash University Clayton Campus"
+msgstr "Campus Clayton de l'Université Monash"
+
+#: app/presentations/pages/pages-profile.html:644
+msgid "Basic School - 2015"
+msgstr "École primaire - 2015"
+
+#: app/presentations/pages/pages-profile.html:647
+msgid "Ascham School"
+msgstr "École Ascham"
+
+#: app/presentations/pages/pages-profile.html:648
+msgid "School"
+msgstr "École"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:31
+msgid "Menu"
+msgstr "Menu"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:44
+msgid "Widgets"
+msgstr "Widgets"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:51
+msgid "Landing"
+msgstr "Accueil"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:55
+msgid "Pages"
+msgstr "Pages"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:60
+#, fuzzy
+#| msgid "Not authenticated"
+msgid "Authentication"
+msgstr "Non authentifié"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:66
+msgid "Log In"
+msgstr "Se connecter"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:69
+msgid "Register"
+msgstr "S'inscrire"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:72
+msgid "Recover Password"
+msgstr "Récupérer le mot de passe"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:75
+#: app/presentations/templates/components/dashboard-top-start.html:242
+msgid "Lock Screen"
+msgstr "Verrouiller l'écran"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:78
+msgid "Confirm Mail"
+msgstr "Confirmer l'e-mail"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:81
+msgid "Email Verification"
+msgstr "Vérification de l'e-mail"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:84
+#: app/presentations/templates/components/dashboard-top-start.html:249
+msgid "Logout"
+msgstr "Se déconnecter"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:92
+msgid "Error Pages"
+msgstr "Pages d'erreur"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:98
+msgid "Error 404"
+msgstr "Erreur 404"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:101
+msgid "Error 500"
+msgstr "Erreur 500"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:104
+msgid "Error 503"
+msgstr "Erreur 503"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:107
+msgid "Error 429"
+msgstr "Erreur 429"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:110
+msgid "Offline Page"
+msgstr "Page hors ligne"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:119
+msgid "Utility"
+msgstr "Utilitaires"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:125
+msgid "Starter"
+msgstr "Démarrage"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:131
+msgid "Pricing"
+msgstr "Tarification"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:134
+#: app/presentations/templates/components/dashboard-left-side-bar.html:343
+msgid "Timeline"
+msgstr "Chronologie"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:137
+msgid "Invoice"
+msgstr "Facture"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:140
+msgid "FAQs"
+msgstr "FAQ"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:143
+msgid "Gallery"
+msgstr "Galerie"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:146
+msgid "Maintenance"
+msgstr "Maintenance"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:149
+msgid "Coming Soon"
+msgstr "Bientôt disponible"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:155
+msgid "General"
+msgstr "Général"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:166
+msgid "Accordions"
+msgstr "Accordéons"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:169
+msgid "Alerts"
+msgstr "Alertes"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:172
+msgid "Badges"
+msgstr "Badges"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:175
+msgid "Breadcrumb"
+msgstr "Fil d'Ariane"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:178
+msgid "Buttons"
+msgstr "Boutons"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:181
+msgid "Cards"
+msgstr "Cartes"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:184
+msgid "Collapse"
+msgstr "Réduire"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:187
+msgid "Dropdowns"
+msgstr "Menus déroulants"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:190
+msgid "Embed Video"
+msgstr "Vidéo intégrée"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:193
+msgid "Grid"
+msgstr "Grille"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:196
+msgid "Images"
+msgstr "Images"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:199
+msgid "List Group"
+msgstr "Groupe de liste"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:202
+msgid "Modals"
+msgstr "Fenêtres modales"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:205
+msgid "Placeholders"
+msgstr "Espaces réservés"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:208
+msgid "Pagination"
+msgstr "Pagination"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:211
+msgid "Popovers"
+msgstr "Info-bulles"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:217
+msgid "Scrollspy"
+msgstr "Défilement espion"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:220
+msgid "Spinners"
+msgstr "Indicateurs de chargement"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:223
+msgid "Tabs"
+msgstr "Onglets"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:226
+msgid "Tooltips"
+msgstr "Info-bulles"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:229
+msgid "Typography"
+msgstr "Typographie"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:238
+msgid "Extended UI"
+msgstr "Interface étendue"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:244
+msgid "Carousel"
+msgstr "Carrousel"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:247
+#, fuzzy
+#| msgid "Location"
+msgid "Notifications"
+msgstr "Notifications"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:250
+msgid "Offcanvas"
+msgstr "Hors-champ"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:253
+msgid "Range Slider"
+msgstr "Curseur de plage"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:262
+msgid "Icons"
+msgstr "Icônes"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:268
+msgid "Feather Icons"
+msgstr "Icônes Feather"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:271
+msgid "Material Design Icons"
+msgstr "Icônes Material Design"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:280
+msgid "Forms"
+msgstr "Formulaires"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:286
+msgid "General Elements"
+msgstr "Éléments généraux"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:289
+#, fuzzy
+#| msgid "Education"
+msgid "Validation"
+msgstr "Validation"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:292
+msgid "Quilljs Editor"
+msgstr "Éditeur Quilljs"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:295
+msgid "Picker"
+msgstr "Sélecteur"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:304
+msgid "Tables"
+msgstr "Tables"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:310
+msgid "Basic Tables"
+msgstr "Tables basiques"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:313
+msgid "Data Tables"
+msgstr "Tables de données"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:322
+msgid "Apex Charts"
+msgstr "Graphiques Apex"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:328
+msgid "Line"
+msgstr "Ligne"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:331
+msgid "Area"
+msgstr "Zone"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:334
+msgid "Column"
+msgstr "Colonne"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:337
+msgid "Bar"
+msgstr "Barre"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:340
+msgid "Mixed"
+msgstr "Mixte"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:346
+msgid "Range Area"
+msgstr "Zone de plage"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:349
+msgid "Funnel"
+msgstr "Entonnoir"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:352
+msgid "Candlestick"
+msgstr "Chandelier"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:355
+msgid "Boxplot"
+msgstr "Boîte à moustaches"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:358
+msgid "Bubble"
+msgstr "Bulle"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:361
+msgid "Scatter"
+msgstr "Nuage de points"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:364
+msgid "Heatmap"
+msgstr "Carte thermique"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:367
+msgid "Treemap"
+msgstr "Carte arborescente"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:370
+#, fuzzy
+#| msgid "Profile"
+msgid "Pie"
+msgstr "Secteur"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:373
+msgid "Radialbar"
+msgstr "Barre radiale"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:376
+msgid "Radar"
+msgstr "Radar"
+
+#: app/presentations/templates/components/dashboard-left-side-bar.html:379
+msgid "Polar"
+msgstr "Polaire"
+
+#: app/presentations/templates/components/dashboard-top-start.html:15
+msgid "Search..."
+msgstr "Rechercher..."
+
+#: app/presentations/templates/components/dashboard-top-start.html:34
+msgid "Clear All"
+msgstr "Tout effacer"
+
+#: app/presentations/templates/components/dashboard-top-start.html:36
+#, fuzzy
+#| msgid "Location"
+msgid "Notification"
+msgstr "Notification"
+
+#: app/presentations/templates/components/dashboard-top-start.html:49
+#: app/presentations/templates/components/dashboard-top-start.html:108
+#: app/presentations/templates/components/dashboard-top-start.html:122
+msgid "5 min ago"
+msgstr "Il y a 5 min"
+
+#: app/presentations/templates/components/dashboard-top-start.html:52
+#: app/presentations/templates/components/dashboard-top-start.html:111
+#: app/presentations/templates/components/dashboard-top-start.html:125
+#, fuzzy
+#| msgid "Components"
+msgid "Completed"
+msgstr "Terminé"
+
+#: app/presentations/templates/components/dashboard-top-start.html:52
+msgid "Improve workflow in Figma"
+msgstr "Améliorer le flux de travail dans Figma"
+
+#: app/presentations/templates/components/dashboard-top-start.html:64
+msgid "1 min ago"
+msgstr "Il y a 1 min"
+
+#: app/presentations/templates/components/dashboard-top-start.html:67
+msgid "Added file to"
+msgstr "Fichier ajouté à"
+
+#: app/presentations/templates/components/dashboard-top-start.html:67
+msgid "Create dark mode for our iOS"
+msgstr "Créer le mode sombre pour notre iOS"
+
+#: app/presentations/templates/components/dashboard-top-start.html:92
+#: app/presentations/templates/components/dashboard-top-start.html:137
+msgid "7 min ago"
+msgstr "Il y a 7 min"
+
+#: app/presentations/templates/components/dashboard-top-start.html:95
+#: app/presentations/templates/components/dashboard-top-start.html:140
+msgid "Mentioned you in the"
+msgstr "Vous a mentionné dans"
+
+#: app/presentations/templates/components/dashboard-top-start.html:95
+#: app/presentations/templates/components/dashboard-top-start.html:140
+msgid "Rewrite text-button"
+msgstr "Réécriture du bouton texte"
+
+#: app/presentations/templates/components/dashboard-top-start.html:97
+#: app/presentations/templates/components/dashboard-top-start.html:142
+msgid "Please make sure that you're...."
+msgstr "Veuillez vous assurer que vous êtes...."
+
+#: app/presentations/templates/components/dashboard-top-start.html:111
+#, fuzzy
+#| msgid "Components"
+msgid "Create new components"
+msgstr "Créer de nouveaux composants"
+
+#: app/presentations/templates/components/dashboard-top-start.html:125
+msgid "Improve workflow in React"
+msgstr "Améliorer le flux de travail dans React"
+
+#: app/presentations/templates/components/dashboard-top-start.html:149
+msgid "View all"
+msgstr "Voir tout"
+
+#: app/presentations/templates/components/dashboard-top-start.html:197
+#, fuzzy
+#| msgid "Profile"
+msgid "Primary Profile"
+msgstr "Profil principal"
+
+#: app/presentations/templates/components/dashboard-top-start.html:207
+#, fuzzy
+#| msgid "user profiles"
+msgid "Other Profiles"
+msgstr "Autres profils"
+
+#: app/presentations/templates/components/dashboard-top-start.html:221
+msgid "Default"
+msgstr "Par défaut"
+
+#: app/presentations/templates/components/dashboard-top-start.html:232
+msgid "My Account"
+msgstr "Mon compte"
+
+#: app/presentations/templates/components/dashboard-top-start.html:237
+#, fuzzy
+#| msgid "password"
+msgid "Change Password"
+msgstr "Changer le mot de passe"
+
+#: app/services/user_service.py:111
+msgid "Profile does not belong to user"
+msgstr "Le profil n'appartient pas à l'utilisateur"
+
+#: lab2/settings.py:209
+msgid "English"
+msgstr "Anglais"
+
+#: lab2/settings.py:210
+msgid "Spanish"
+msgstr "Espagnol"
+
+#: lab2/settings.py:211
+msgid "French"
+msgstr "Français"

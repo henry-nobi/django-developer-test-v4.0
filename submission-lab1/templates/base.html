@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock title %}</title>
+    <link
+        rel="shortcut icon"
+        href="https://demos.creative-tim.com/notus-react/favicon.ico"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="https://demos.creative-tim.com/notus-react/favicon.ico">
+    <link rel="stylesheet" href="{% static 'css/vendor/tailwind.css' %}">
+    {% block extra_css %}{% endblock extra_css %}
+</head>
+
+<body>
+    <div id="root">
+        {% include 'includes/navbar.html' %}
+
+        {% block content %}{% endblock content %}
+
+        {% include 'includes/footer.html' %}
+    </div>
+
+    {% block extra_js %}{% endblock extra_js %}
+</body>
+
+</html>

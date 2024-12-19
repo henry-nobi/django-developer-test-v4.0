@@ -1,0 +1,50 @@
+{% extends 'templates/base-dashboard.html' %}
+{% load static %}
+
+{% block title %}Preview{% endblock %}
+
+{% block extra_css %}
+<!-- Swiper Css -->
+<link href="{% static 'libs/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+<!-- navbar section -->
+<nav class="navbar navbar-expand-lg fixed-top nav-light sticky" id="navbar">
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            <img src="{% static 'images/logo-dark.png' %}" class="card-logo card-logo-light" alt="logo dark" height="24">
+            <img src="{% static 'images/logo-light.png' %}" class="card-logo card-logo-dark" alt="logo light" height="24">
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="navbar-navlist">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#demo">Demo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#features">Features</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Preview content -->
+{% endblock %}
+
+{% block extra_js %}
+<!-- Gumshoe Js -->
+<script src="{% static 'libs/gumshoejs/gumshoe.min.js' %}"></script>
+<script src="{% static 'js/pages/gumshoe.init.js' %}"></script>
+
+<!-- Swiper Js -->
+<script src="{% static 'libs/swiper/swiper-bundle.min.js' %}"></script>
+<script src="{% static 'js/pages/swiper.init.js' %}"></script>
+
+<!-- Landing Init Js-->
+<script src="{% static 'js/pages/landing.init.js' %}"></script>
+{% endblock %} 

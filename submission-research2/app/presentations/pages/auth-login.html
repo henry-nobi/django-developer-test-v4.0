@@ -1,0 +1,146 @@
+{% extends 'templates/base-auth.html' %}
+{% load static %}
+
+{% block title %}Log In{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row vh-100">
+        <div class="col-12">
+            <div class="p-0">
+                <div class="row d-flex align-items-center">
+                    <div class="col-md-6 col-xl-6 col-lg-6">
+                        <div class="row">
+                            <div class="col-md-6 mx-auto">
+                                <div class="mb-0 border-0">
+                                    <div class="p-0">
+                                        <div class="text-center">
+                                            <div class="mb-4">
+                                                <a href="/" class="auth-logo">
+                                                    <img src="{% static 'images/logo-dark.png' %}" alt="logo-dark" class="mx-auto" height="28" />
+                                                </a>
+                                            </div>
+                    
+                                            <div class="auth-title-section mb-3"> 
+                                                <h3 class="text-dark fs-20 fw-medium mb-2">Welcome back</h3>
+                                                <p class="text-dark text-capitalize fs-14 mb-0">Please enter your details.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="pt-0">
+                                        <form action="{% url 'api-login' %}" method="post" class="my-4" id="loginForm">
+                                            {% csrf_token %}
+                                            <div class="form-group mb-3">
+                                                <label for="emailaddress" class="form-label">Email address</label>
+                                                <input class="form-control" type="email" id="emailaddress" name="email" required="" placeholder="Enter your email">
+                                            </div>
+                
+                                            <div class="form-group mb-3">
+                                                <label for="password" class="form-label">Password</label>
+                                                <div class="input-group">
+                                                    <input class="form-control" type="password" name="password" required="" id="password" placeholder="Enter your password">
+                                                    <button class="btn" style="font-size: 1rem;border: var(--bs-border-width) solid var(--bs-gray-400);" type="button" id="togglePassword">
+                                                        <i data-feather="eye-off" id="passwordEyeIcon" style="width: 18px; height: 18px;"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                
+                                            <div class="form-group d-flex mb-3">
+                                                <div class="col-sm-6">
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input" id="checkbox-signin" checked>
+                                                        <label class="form-check-label" for="checkbox-signin">Remember me</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6 text-end">
+                                                    <a class='text-muted fs-14' href="{% url 'auth-recoverpw' %}">Forgot password?</a>                             
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="form-group mb-0 row">
+                                                <div class="col-12">
+                                                    <div class="d-grid">
+                                                        <button class="btn btn-primary" type="submit" id="loginBtn">
+                                                            <span class="spinner-border spinner-border-sm me-1 d-none" id="loginSpinner" role="status" aria-hidden="true"></span>
+                                                            Log In
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <div class="text-center text-muted">
+                                            <p class="mb-0">Don't have an account ?<a class='text-primary ms-2 fw-medium' href="{% url 'auth-register' %}">Sign Up</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-xl-6 col-lg-6 p-0 vh-100 d-flex justify-content-center account-page-bg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('loginForm');
+    const passwordInput = document.getElementById('password');
+    const togglePassword = document.getElementById('togglePassword');
+    let passwordEyeIcon = document.getElementById('passwordEyeIcon');
+    const loginBtn = document.getElementById('loginBtn');
+    const spinner = document.getElementById('loginSpinner');
+
+    // Toggle password visibility function
+    togglePassword.addEventListener('click', function() {
+        const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+        passwordInput.setAttribute('type', type);
+        passwordEyeIcon.setAttribute('data-feather', type === 'password' ? 'eye-off' : 'eye');
+        feather.replace();
+        passwordEyeIcon = document.getElementById('passwordEyeIcon');
+    });
+
+    form.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        
+        const email = document.getElementById('emailaddress').value;
+        const password = passwordInput.value;
+
+        // Show loading state
+        loginBtn.disabled = true;
+        spinner.classList.remove('d-none');
+        try {
+            const response = await ApiService.login(email, password);
+            if (response.status === 'success') {
+                AppNotification.success('Login successful! Redirecting...');
+                setTimeout(() => {
+                    // Get the 'next' parameter from URL if it exists
+                    const urlParams = new URLSearchParams(window.location.search);
+                    let nextUrl = urlParams.get('next') || "{% url 'index' %}";
+                    const defaultLanguage = response?.data?.user?.default_language;
+                    if(defaultLanguage && defaultLanguage !== 'en'){
+                        nextUrl = `/${defaultLanguage}${nextUrl}0`;
+                    }
+                    // Redirect to next URL if it exists, otherwise go to index
+                    window.location.href = nextUrl ;
+                    // Hide loading state
+                    loginBtn.disabled = false;
+                    spinner.classList.add('d-none');
+                }, 1000);
+            } else {
+                AppNotification.error(response.message || 'Login failed');
+                loginBtn.disabled = false;
+                spinner.classList.add('d-none');
+            }
+        } catch (error) {
+            AppNotification.error(String(error) || 'Login failed');
+            loginBtn.disabled = false;
+            spinner.classList.add('d-none');
+        }
+    });
+});
+</script>
+{% endblock %} 

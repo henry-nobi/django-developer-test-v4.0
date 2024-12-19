@@ -1,0 +1,27 @@
+{% extends 'templates/base-dashboard.html' %}
+{% load static %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block extra_css %}
+<!-- Add any additional CSS here -->
+<link href="{% static 'css/app.min.css' %}" rel="stylesheet" type="text/css" id="app-style" />
+{% endblock %}
+
+{% block content %}
+<!-- Your dashboard content here -->
+<div class="container-fluid">
+    <!-- Dashboard widgets and content -->
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<!-- Apexcharts JS -->
+<script src="{% static 'libs/apexcharts/apexcharts.min.js' %}"></script>
+
+<!-- For basic area chart -->
+<script src="https://apexcharts.com/samples/assets/stock-prices.js"></script>
+
+<!-- Widgets Init Js -->
+<script src="{% static 'js/pages/dashboard.init.js' %}"></script>
+{% endblock %} 
