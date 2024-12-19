@@ -59,8 +59,12 @@ Kadso
 
 ## Features
 
-## Demo Video
+## Test
+After seeding the database, you can use the following test account to log in:
+- **Email**: system@example.com
+- **Password**: @345678
 
+## Demo Video
 Watch the demo video to see the application in action: [Demo Video](https://drive.google.com/file/d/1wt-XI1pkIbAZKnVN7kAeph6zZC9KXtYp/view?usp=sharing)
 
 ### Order of Demo
