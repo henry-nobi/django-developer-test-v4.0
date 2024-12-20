@@ -6,6 +6,9 @@ Kadso
 ## GitHub Link
 - [Project Repository](https://github.com/henry-nobi/django-developer-v4.0/tree/main/submission-research2)
 
+## Environment Setup
+Ensure you have Python 3.13.1 installed on your system. You can download it from the [official Python website](https://www.python.org/downloads/release/python-3131/).
+
 ## How to Run
 1. Clone the repository:
     ```bash
@@ -78,7 +81,7 @@ Watch the demo video to see the application in action: [Demo Video](https://driv
 4. Change Profile
 5. Logout
 6. Reset Password
-7. All UIs
+7. Other UIs
 8. Action when not logged in
 
 ### Login
