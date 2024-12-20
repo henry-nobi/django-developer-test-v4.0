@@ -21,25 +21,29 @@ Kadso
 3. Install the required dependencies:
     ```bash
     pip install -r requirements.txt
-    ```
-4. Apply migrations:
+    4. Copy the example environment file and modify the configurations as needed:
+        ```bash
+        cp .env.example .env
+        ```
+        > **Note**: Contact me to get the `.env` file with the necessary configurations.
+5. Apply migrations:
     ```bash
     python manage.py migrate
     ```
     > **Note**: This step is required only for the first time you set up the project or when there are new migrations.
 
-5. Seed the database:
+6. Seed the database:
     ```bash
     python manage.py seed_db
     ```
     > **Note**: This step is required only for the first time you set up the project or when you need to reset the database.
 
-6. Run the development server:
+7. Run the development server:
     ```bash
     python manage.py runserver 8888
     ```
 
-7. See the result in your browser at [http://localhost:8888](http://localhost:8888)
+8. See the result in your browser at [http://localhost:8888](http://localhost:8888)
 
 ## How to Compile Language
 1. Generate the locale files:
