@@ -25,7 +25,7 @@ Kadso
         ```bash
         cp .env.example .env
         ```
-        > **Note**: Contact me to get the `.env` file with the necessary configurations.
+        > **Note**: Contact me to get the `.env` file with the necessary configurations if needed.
 5. Apply migrations:
     ```bash
     python manage.py migrate
