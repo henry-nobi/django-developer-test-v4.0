@@ -15,7 +15,7 @@
 5. Provide any setup instructions that may be required by the test evaluator.
 6. Include a `requirements.txt` file to ensure evaluators can run your code.
 
-## Example Directory Structure
+## Directory Structure
 ```
 submission-lab1/
 ├── app             # Contains the main application code
@@ -28,11 +28,14 @@ submission-lab1/
 ├── requirements.txt # File listing project dependencies
 ```
 
+## Environment Setup
+Ensure you have Python 3.13.1 installed on your system. You can download it from the [official Python website](https://www.python.org/downloads/release/python-3131/).
+
 ## Setup Instructions
 
 1. **Clone the Repository**:
     ```sh
-    git clone https://github.com/henry-nobi/django-developer-v4.0
+    git clone https://github.com/henry-nobi/django-developer-test-v4.0.git
     cd submission-lab1
     ```
 

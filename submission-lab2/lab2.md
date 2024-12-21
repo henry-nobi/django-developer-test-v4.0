@@ -12,8 +12,8 @@ Ensure you have Python 3.13.1 installed on your system. You can download it from
 ## How to Run
 1. Clone the repository:
     ```bash
-    git clone https://github.com/henry-nobi/django-developer-v4.0/tree/main/submission-research2.git
-    cd submission-research2
+    git clone https://github.com/henry-nobi/django-developer-test-v4.0.git
+    cd submission-lab2
     ```
 2. Create a virtual environment and activate it:
     ```bash
@@ -24,11 +24,11 @@ Ensure you have Python 3.13.1 installed on your system. You can download it from
 3. Install the required dependencies:
     ```bash
     pip install -r requirements.txt
-    4. Copy the example environment file and modify the configurations as needed:
-        ```bash
-        cp .env.example .env
-        ```
-        > **Note**: Contact me to get the `.env` file with the necessary configurations if needed.
+4. Copy the example environment file and modify the configurations as needed:
+    ```bash
+    cp .env.example .env
+    ```
+    > **Note**: Contact me to get the `.env` file with the necessary configurations if needed.
 5. Apply migrations:
     ```bash
     python manage.py migrate
