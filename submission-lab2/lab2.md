@@ -4,7 +4,7 @@ Kadso
 [Download Theme](https://www.buzzerboysites.com/html_kits/kadso.zip)
 
 ## GitHub Link
-- [Project Repository](https://github.com/henry-nobi/django-developer-v4.0/tree/main/submission-research2)
+- [Project Repository](https://github.com/henry-nobi/django-developer-test-v4.0/blob/main/submission-lab2)
 
 ## Environment Setup
 Ensure you have Python 3.13.1 installed on your system. You can download it from the [official Python website](https://www.python.org/downloads/release/python-3131/).
