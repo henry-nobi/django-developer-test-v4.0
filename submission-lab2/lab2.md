@@ -87,34 +87,34 @@ Watch the demo video to see the application in action: [Demo Video](https://driv
 ### Login
 - **Title**: User Login
 - **Description**: Allows users to log into the system using their email and password.
-- **Image**: ![Login](/submission-research2/screenshots/login.png)
+- **Image**: ![Login](/submission-lab2/screenshots/login.png)
 
 ### Change Password
 - **Title**: Change Password
 - **Description**: Allows users to change their current password to a new one.
-- **Image**: ![Change Password](/submission-research2/screenshots/change-pwd.png)
+- **Image**: ![Change Password](/submission-lab2/screenshots/change-pwd.png)
 
 ### Multilingualism
 - **Title**: Multilingual Support
 - **Description**: The system supports multiple languages, allowing users to switch between different languages.
-- **Image**: ![Multilingual](/submission-research2/screenshots/language.png)
+- **Image**: ![Multilingual](/submission-lab2/screenshots/language.png)
 
 ### Change Profile
 - **Title**: Change Profile
 - **Description**: Allows users to update their profile information including display name, avatar, and default language.
-- **Image**: ![Change Profile](/submission-research2/screenshots/change-profile.png)
+- **Image**: ![Change Profile](/submission-lab2/screenshots/change-profile.png)
 
 ### Logout
 - **Title**: User Logout
 - **Description**: Allows users to log out of the system securely.
-- **Image**: ![Logout](/submission-research2/screenshots/logout.png)
+- **Image**: ![Logout](/submission-lab2/screenshots/logout.png)
 
 ### Reset Forgotten Password
 - **Title**: Reset Forgotten Password
 - **Description**: Allows users to reset their password if they have forgotten it by receiving a reset link via email.
-- **Image**: ![Reset Password](/submission-research2/screenshots/reset-pwd.png)
+- **Image**: ![Reset Password](/submission-lab2/screenshots/reset-pwd.png)
 
 ### Local IDE Demonstration
 - **Title**: Local IDE Demonstration
 - **Description**: Shows the application running in a local development environment to demonstrate that it is working as a Django application.
-- **Image**: ![Local IDE](/submission-research2/screenshots/local-ide.png)
+- **Image**: ![Local IDE](/submission-lab2/screenshots/local-ide.png)
